@@ -1,0 +1,40 @@
+#portfolio
+    background-color: #eff6ff
+    h1
+        font-size: 45px
+        color: #212529
+        font-weight: 700
+    h3
+        color: #747e88
+        font-size: 20px
+        padding: 20px
+    .box
+        margin-bottom: 25px
+        .imgbox
+            position: relative
+            img
+                width: 350px
+                height: 300px
+            &:hover
+                .overlay
+                    opacity: 1
+                    width: 350px
+                    height: 300px
+            .overlay
+                display: flex
+                position: absolute
+                top: 0
+                left: 0
+                background-color: #e0b720e6
+                opacity: 0
+                cursor: pointer
+                transition: 300ms opacity
+                width: 350px
+                height: 300px
+                .icon
+                    font-size: 50px
+                    color: #ffff
+        .textbox
+            h2
+                font-size: 28px
+                font-weight: 700
