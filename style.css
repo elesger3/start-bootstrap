@@ -8,6 +8,7 @@ header {
   position: fixed;
   padding: 15px 0;
   width: 100%;
+  z-index: 1;
 }
 header .menu {
   padding: 10px 0;
