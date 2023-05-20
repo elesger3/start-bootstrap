@@ -134,6 +134,19 @@ header .menu .box .icon {
   color: white;
   margin-left: 110px;
 }
+@media screen and (max-width: 768px) {
+  #services .box {
+    padding-left: 80px;
+    margin-right: 70px;
+  }
+  #services .box .icon {
+    font-size: 65px;
+    border-radius: 90px;
+    width: 125px;
+    padding: 30px 0;
+    margin-left: 110px;
+  }
+}
 
 #portfolio {
   background-color: #eff6ff;
@@ -385,6 +398,7 @@ header .menu .box .icon {
 
 #contact {
   background-image: url(https://startbootstrap.github.io/startbootstrap-agency/assets/img/map-image.png);
+  background-size: cover;
   background-position: center center;
   background-color: rgba(0, 0, 0, 0);
   opacity: 0.9;
