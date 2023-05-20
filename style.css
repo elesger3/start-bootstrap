@@ -121,16 +121,15 @@ header .menu .box .icon {
   margin: 18px 0;
 }
 #services .box h3 {
-  font-size: 20px;
   color: #5e666d;
   line-height: 1.5;
 }
 #services .box .icon {
   font-size: 65px;
-  border-radius: 90px;
+  border-radius: 50%;
   width: 125px;
-  padding: 30px 0;
-  background-color: #fdfa2c;
+  padding: 28px 0;
+  background-color: #e9c61c;
   color: white;
   margin-left: 110px;
 }
@@ -155,11 +154,12 @@ header .menu .box .icon {
   font-size: 45px;
   color: #212529;
   font-weight: 700;
+  padding-top: 70px;
 }
 #portfolio h3 {
   color: #747e88;
   font-size: 20px;
-  padding: 20px;
+  padding: 20px 0 70px 0;
 }
 #portfolio .box {
   margin-bottom: 25px;
@@ -193,10 +193,13 @@ header .menu .box .icon {
   color: white;
 }
 #portfolio .box .textbox h2 {
+  padding-top: 20px;
   font-size: 28px;
   font-weight: 700;
 }
-
+#about {
+  padding: 80px 0;
+}
 #about .reverse {
   display: flex;
   flex-direction: row-reverse;
@@ -210,6 +213,14 @@ header .menu .box .icon {
   font-size: 20px;
   margin: 20px;
   color: #646c74;
+}
+#about .txt-right {
+  width: 38%;
+  margin-left: 30px;
+  text-align: left;
+}
+#about .txt-left {
+  padding-left: 40px;
 }
 #about .textbox {
   text-align: left;
@@ -227,20 +238,18 @@ header .menu .box .icon {
   line-height: 1.4;
   color: #6c757d;
 }
-#about .txt-right {
-  width: 38%;
-  margin-left: 30px;
-  text-align: left;
-}
-#about .txt-left {
-  padding-left: 40px;
-}
-#about .imgbox {
+#about .imgbox1, #about .imgbox {
   width: 100px;
   height: 25%;
 }
-#about .imgbox img {
+#about .imgbox1 img, #about .imgbox img {
   border-radius: 100px;
+}
+#about .imgbox1 {
+  padding-left: 40px;
+}
+#about .imgbox {
+  padding-right: 45px;
 }
 #about .circle h1 {
   text-align: center;

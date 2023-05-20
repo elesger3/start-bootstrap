@@ -1,10 +1,12 @@
 #portfolio {
+  height: 970px;
   background-color: #eff6ff;
 }
 #portfolio h1 {
   font-size: 45px;
   color: #212529;
   font-weight: 700;
+  padding-top: 60px;
 }
 #portfolio h3 {
   color: #747e88;
@@ -18,7 +20,7 @@
   position: relative;
 }
 #portfolio .box .imgbox img {
-  width: 35 0px;
+  width: 350px;
   height: 300px;
 }
 #portfolio .box .imgbox:hover .overlay {
@@ -43,6 +45,7 @@
   color: white;
 }
 #portfolio .box .textbox h2 {
+  margin-top: 15px;
   font-size: 28px;
   font-weight: 700;
 }/*# sourceMappingURL=portfolio.css.map */
