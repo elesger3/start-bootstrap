@@ -197,158 +197,122 @@ header .menu .box .icon {
   font-size: 28px;
   font-weight: 700;
 }
-#about {
-  padding: 80px 0;
+#about .txt {
+  margin: 60px 0;
 }
-#about .reverse {
-  display: flex;
-  flex-direction: row-reverse;
-}
-#about .txt1 h1 {
-  font-size: 50px;
+#about .txt h1 {
+  font-size: 55px;
   font-weight: 700;
-  margin-top: 80px;
+  margin-bottom: 10px;
 }
-#about .txt1 h2 {
-  font-size: 20px;
-  margin: 20px;
-  color: #646c74;
+#about .txt h3 {
+  font-size: 17px;
+  color: #828080;
 }
-#about .txt-right {
-  width: 38%;
-  margin-left: 30px;
-  text-align: left;
+#about .box {
+  display: flex;
+  align-items: center;
+  margin: 0 0 100px 100px;
 }
-#about .txt-left {
-  padding-left: 40px;
+#about .box .textbox {
+  width: 400px;
+  margin: 0 20px;
+  text-align: end;
 }
-#about .textbox {
-  text-align: left;
-  width: 76%;
-}
-#about .textbox h1, #about .textbox h2 {
+#about .box .textbox h2 {
   font-size: 30px;
   font-weight: 700;
+  line-height: 1.3;
 }
-#about .textbox h2 {
-  margin: 10px 0;
-}
-#about .textbox h3 {
-  font-size: 19px;
-  line-height: 1.4;
-  color: #6c757d;
-}
-#about .imgbox1, #about .imgbox {
-  width: 100px;
-  height: 25%;
-}
-#about .imgbox1 img, #about .imgbox img {
-  border-radius: 100px;
-}
-#about .imgbox1 {
-  padding-left: 40px;
-}
-#about .imgbox {
-  padding-right: 45px;
-}
-#about .circle h1 {
-  text-align: center;
-  background-color: #ffc800;
-  color: white;
-  font-size: 16px;
+#about .box .textbox h4 {
+  font-size: 30px;
   font-weight: 700;
-  line-height: 1;
-  width: 103px;
-  border: 7px solid rgba(231, 234, 234, 0.9960784314);
+  line-height: 1.3;
+}
+#about .box .textbox p {
+  font-size: 19px;
+  color: #828080;
+  line-height: 1.4;
+}
+#about .box .imgbox {
+  width: 180px;
+  height: 180px;
+  margin: 0 30px;
+}
+#about .box .imgbox img {
   border-radius: 50%;
-  padding: 16px 20px;
-  margin-top: 70px;
+  border: 6px solid rgba(210, 210, 210, 0.4784313725);
 }
-@media screen and (min-width: 576px) {
-  #about .textbox {
-    text-align: left;
-    width: 600px;
+#about .right {
+  margin: 0 100px 100px 0;
+}
+#about .right .textbox {
+  text-align: start;
+}
+#about .ourstory {
+  width: 180px;
+  height: 180px;
+  border-radius: 90px;
+  border: 6px solid #cac7c7;
+  background-color: #eeff00;
+  color: white;
+}
+#about .ourstory .minibox {
+  text-align: center;
+  padding: 0 40px;
+}
+#about .ourstory .minibox h2 {
+  padding-top: 38px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+@media screen and (max-width: 992px) {
+  #about .box {
+    margin-bottom: 100px;
+    align-items: flex-start;
   }
-  #about .textbox h3 {
-    margin: 0;
-  }
-  #about .txt-right {
-    text-align: left;
-  }
-  #about .txt-right h3 {
-    margin: 0;
-  }
-  #about .imgbox {
-    width: 195px;
-    margin-right: 50px;
-  }
-  #about .circle h1 {
-    font-size: 20px;
-    width: 111px;
-    padding: 13px 20px;
-    margin: 0;
+  #about .box .textbox {
+    width: 200px;
   }
 }
-@media screen and (min-width: 768px) {
-  #about .reverse {
-    display: flex;
+@media screen and (max-width: 768px) {
+  #about .txt h1 {
+    font-size: 50px;
+  }
+  #about .txt h3 {
+    font-size: 15px;
+  }
+  #about .box {
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    margin-right: 100px;
+    margin-bottom: 75px;
+  }
+  #about .box .textbox {
+    text-align: start;
+  }
+  #about .box .imgbox {
+    width: 160px;
+    height: auto;
+  }
+  #about .box .imgbox img {
+    width: 140px;
+  }
+  #about .right {
+    margin-bottom: 70px;
     flex-direction: row;
   }
-  #about .textbox {
-    text-align: right;
-    max-width: 272px;
-    margin-right: 25px;
-  }
-  #about .txt-left {
-    text-align: left;
-  }
-  #about .imgbox {
-    width: 85px;
-    margin-right: 20px;
-  }
-  #about .circle h1 {
-    font-size: 15px;
-    width: 86px;
-    padding: 11px 5px;
-    margin-right: 25px;
-  }
-  #about .edit {
-    justify-content: center;
+  #about .right .textbox {
+    text-align: start;
   }
 }
-@media screen and (min-width: 992px) {
-  #about .textbox {
-    text-align: right;
-    max-width: 384px;
-  }
-  #about .txt-left {
-    text-align: left;
-  }
-  #about .imgbox {
-    width: 195px;
-  }
-  #about .circle h1 {
-    font-size: 19px;
-    width: 105px;
-    padding: 12px 18px;
-  }
+#about .ourstory {
+  width: 160px;
+  height: 160px;
 }
-@media screen and (min-width: 1200px) {
-  #about .textbox {
-    text-align: right;
-    max-width: 535px;
-  }
-  #about .txt-left {
-    text-align: left;
-  }
-  #about .imgbox {
-    max-width: 160px;
-  }
-  #about .circle h1 {
-    font-size: 28px;
-    width: 159px;
-    padding: 26px 18px;
-  }
+#about .ourstory .minibox {
+  padding: 0 30px;
 }
 
 #team h1 {
@@ -406,13 +370,15 @@ header .menu .box .icon {
 }
 
 #contact {
-  background-image: url(https://startbootstrap.github.io/startbootstrap-agency/assets/img/map-image.png);
+  background-image: url("/assets/contact.jpg");
   background-size: cover;
   background-position: center center;
   background-color: rgba(0, 0, 0, 0);
   opacity: 0.9;
 }
 #contact h1 {
+  padding-top: 70px;
+  margin-top: 50px;
   font-weight: 700;
   font-size: 45px;
   color: white;
@@ -437,7 +403,7 @@ header .menu .box .icon {
 }
 #contact .text {
   display: flex;
-  margin-top: 55px;
+  margin-top: 70px;
   font-size: 20px;
 }
 #contact .text textarea {
@@ -449,6 +415,7 @@ header .menu .box .icon {
 }
 #contact .btn {
   padding: 20px 60px;
+  margin-bottom: 70px;
   background-color: #daaa00;
   margin-top: 42px;
   opacity: 0.8;
@@ -462,4 +429,36 @@ header .menu .box .icon {
   #contact .text {
     margin-top: 30px;
   }
+}
+
+footer {
+  padding: 25px 0;
+}
+footer h1 {
+  font-size: 20px;
+  color: #444242;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+footer ul li .icon {
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #050505;
+  color: white;
+  margin: 0 13px;
+  border-radius: 50%;
+}
+footer a {
+  color: #000;
+  font-size: 20px;
+}
+footer a span {
+  margin-left: 16px;
 }/*# sourceMappingURL=style.css.map */
