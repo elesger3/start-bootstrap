@@ -1,124 +1,92 @@
 #about
-    padding: 80px 0
-    .reverse
-        display: flex
-        flex-direction: row-reverse
-    .txt1
+    .txt
+        margin: 60px 0
         h1
-            font-size: 50px
+            font-size: 55px
             font-weight: 700
-            margin-top: 80px
-        h2
-            font-size: 20px
-            margin: 20px
-            color: #646c74
-    .txt-right
-        width: 38%
-        margin-left: 30px
-        text-align: left
-    .txt-left
-        padding-left: 40px
-    .textbox
-        text-align: left
-        width: 76%
-        h1,h2
-            font-size: 30px
-            font-weight: 700
-        h2
-            margin: 10px 0
+            margin-bottom: 10px
         h3
-            font-size: 19px
-            line-height: 1.4
-            color: #6c757d
-    .imgbox1,.imgbox
-        width: 100px
-        height: 25%
-        img
-            border-radius: 100px
-    .imgbox1
-        padding-left: 40px
-    .imgbox
-        padding-right: 45px
-    .circle
-        h1
-            text-align: center
-            background-color: #ffc800
-            color: #ffff
-            font-size: 16px
-            font-weight: 700
-            line-height: 1
-            width: 103px
-            border: 7px solid #e7eaeafe
-            border-radius: 50%
-            padding: 16px 20px
-            margin-top: 70px
-
-    @media screen and ( min-width: 576px )
+            font-size: 17px
+            color: #828080
+    .box
+        display: flex
+        align-items: center
+        margin: 0 0 100px 100px
         .textbox
-            text-align: left
-            width: 600px
-            h3
-                margin: 0
-        .txt-right
-            text-align: left
-            h3
-                margin: 0
-        .imgbox
-            width: 195px
-            margin-right: 50px
-        .circle
-            h1
-                font-size: 20px
-                width: 111px
-                padding: 13px 20px
-                margin: 0
-
-    @media screen and ( min-width: 768px )
-        .reverse
-            display: flex
-            flex-direction: row
-        .textbox
-            text-align: right
-            max-width: 272px
-            margin-right: 25px
-        .txt-left
-            text-align: left
-        .imgbox
-            width: 85px
-            margin-right: 20px
-        .circle
-            h1
-                font-size: 15px
-                width: 86px
-                padding: 11px 5px
-                margin-right: 25px
-        .edit
-            justify-content: center
-
-    @media screen and ( min-width: 992px )
-        .textbox
-            text-align: right
-            max-width: 384px
-        .txt-left
-            text-align: left
-        .imgbox
-            width: 195px
-        .circle
-            h1
+            width: 400px
+            margin: 0 20px
+            text-align: end
+            h2
+                font-size: 30px
+                font-weight: 700
+                line-height: 1.3
+            h4
+                font-size: 30px
+                font-weight: 700
+                line-height: 1.3
+            p
                 font-size: 19px
-                width: 105px
-                padding: 12px 18px
-
-    @media screen and ( min-width: 1200px )
-        .textbox
-            text-align: right
-            max-width: 535px
-        .txt-left
-            text-align: left
+                color: #828080
+                line-height: 1.4
         .imgbox
-            max-width: 160px
-        .circle
+            width: 180px
+            height: 180px
+            margin: 0 30px
+            img
+                border-radius: 50%
+                border: 6px solid rgba(210, 210, 210, 0.4784313725)
+    .right
+        margin: 0 100px 100px 0
+        .textbox
+            text-align: start
+    .ourstory
+        width: 180px
+        height: 180px
+        border-radius: 90px
+        border: 6px solid #cac7c7
+        background-color: #eeff00
+        color: white
+        .minibox
+            text-align: center
+            padding: 0 40px
+            h2
+                padding-top: 38px
+                font-size: 20px
+                font-weight: 700
+                line-height: 1.2
+
+    @media screen and ( max-width: 992px )
+        .box
+            margin-bottom: 100px
+            align-items: flex-start
+            .textbox
+                width: 200px
+
+    @media screen and ( max-width: 768px )
+        .txt
             h1
-                font-size: 28px
-                width: 159px
-                padding: 26px 18px
+                font-size: 50px
+            h3
+                font-size: 15px
+        .box
+            align-items: flex-start
+            flex-direction: row-reverse
+            margin-right: 100px
+            margin-bottom: 75px
+            .textbox
+                text-align: start
+            .imgbox
+                width: 160px
+                height: auto
+                img
+                    width: 140px
+        .right
+            margin-bottom: 70px
+            flex-direction: row
+            .textbox
+                text-align: start
+    .ourstory
+        width: 160px
+        height: 160px
+        .minibox
+            padding: 0 30px
