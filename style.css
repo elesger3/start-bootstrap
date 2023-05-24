@@ -3,6 +3,14 @@ body {
   font-weight: 500;
 }
 
+.imgbox img {
+  width: 100%;
+}
+
+section {
+  padding: 80px 0;
+}
+
 header {
   background-color: #292828;
   position: fixed;
@@ -57,146 +65,123 @@ header .menu .box .icon {
 }
 
 #nice {
-  min-height: 120vh;
   background-image: url(https://startbootstrap.github.io/startbootstrap-agency/assets/img/header-bg.jpg);
+  background-position: center center;
   background-size: cover;
-  color: white;
+}
+#nice .box {
+  height: 700px;
   display: flex;
   align-items: center;
-  background-position: center;
+  justify-content: center;
 }
-#nice .textbox h1 {
+#nice .box .textbox h1 {
   font-size: 30px;
+  color: white;
+  margin-bottom: 20px;
 }
-#nice .textbox h3 {
-  font-size: 70px;
+#nice .box .textbox h2 {
+  font-size: 80px;
+  color: white;
+  margin: 0 0 50px 0;
   font-weight: 700;
-  margin: 25px 0 55px;
 }
-#nice .textbox .btn {
-  padding: 20px 50px;
-  background-color: #d6a801;
-  font-size: 20px;
-  color: #fff;
+#nice .box .textbox .btn {
+  background-color: #f1c00d;
+  color: white;
+  padding: 18px 40px;
+  font-size: 22px;
+  font-weight: 700;
 }
-#nice .textbox .btn:hover {
-  background-color: #d6a801;
-}
-@media screen and (max-width: 768px) {
-  #nice .textbox h1 {
-    font-size: 20px;
-  }
-  #nice .textbox h3 {
-    font-size: 50px;
-    margin: 25px 0 55px;
-  }
-  #nice .textbox .btn {
-    padding: 20px 50px;
-    background-color: #d6a801;
-    font-size: 20px;
-    color: white;
-  }
+#nice .box .textbox .btn h4 {
+  cursor: pointer;
 }
 
-#services {
-  padding-top: 25px;
+#services .textbox {
+  padding-bottom: 50px;
 }
 #services .textbox h1 {
-  font-size: 60px;
+  font-size: 55px;
   font-weight: 700;
-  margin-top: 80px;
+}
+#services .textbox h3 {
+  font-size: 18px;
+  color: #878181;
+  margin-top: 20px;
 }
 #services .textbox h2 {
-  font-size: 20px;
-  margin: 20px 0 60px;
-  color: #6c757d;
-}
-#services .box {
-  text-align: center;
-  margin-bottom: 80px;
-}
-#services .box h1 {
   font-size: 30px;
   font-weight: 700;
-  margin: 18px 0;
+  margin: 20px 30px;
 }
-#services .box h3 {
-  color: #5e666d;
-  line-height: 1.5;
+#services .textbox h4 {
+  font-size: 14px;
+  color: #757272;
+  line-height: 1.4;
+}
+#services .box {
+  display: flex;
+  justify-content: center;
 }
 #services .box .icon {
-  font-size: 65px;
-  border-radius: 50%;
-  width: 125px;
-  padding: 28px 0;
-  background-color: #e9c61c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 55px;
   color: white;
-  margin-left: 110px;
-}
-@media screen and (max-width: 768px) {
-  #services .box {
-    padding-left: 80px;
-    margin-right: 70px;
-  }
-  #services .box .icon {
-    font-size: 65px;
-    border-radius: 90px;
-    width: 125px;
-    padding: 30px 0;
-    margin-left: 110px;
-  }
+  background-color: #f0cc17;
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
 }
 
 #portfolio {
-  background-color: #eff6ff;
+  background-color: rgba(175, 174, 174, 0.1568627451);
 }
-#portfolio h1 {
-  font-size: 45px;
-  color: #212529;
+#portfolio .textbox {
+  padding-top: 40px;
+}
+#portfolio .textbox h1 {
+  font-size: 50px;
   font-weight: 700;
-  padding-top: 70px;
+  margin-bottom: 15px;
 }
-#portfolio h3 {
-  color: #747e88;
+#portfolio .textbox h3 {
   font-size: 20px;
-  padding: 20px 0 70px 0;
+  color: #a6a9ad;
+  margin-bottom: 70px;
 }
 #portfolio .box {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
+  background-color: white;
+  padding-bottom: 20px;
 }
 #portfolio .box .imgbox {
   position: relative;
 }
-#portfolio .box .imgbox img {
-  width: 350px;
-  height: 300px;
-}
-#portfolio .box .imgbox:hover .overlay {
-  opacity: 1;
-  width: 350px;
-  height: 300px;
-}
-#portfolio .box .imgbox .overlay {
+#portfolio .box .imgbox .icon {
+  width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  color: white;
   position: absolute;
   top: 0;
-  left: 0;
-  background-color: rgba(224, 183, 32, 0.9019607843);
+  bottom: 0;
   opacity: 0;
-  cursor: pointer;
-  transition: 300ms opacity;
-  width: 350px;
-  height: 300px;
-}
-#portfolio .box .imgbox .overlay .icon {
-  font-size: 50px;
-  color: white;
 }
 #portfolio .box .textbox h2 {
-  padding-top: 20px;
-  font-size: 28px;
+  font-size: 29px;
   font-weight: 700;
+  line-height: 1.2;
+  margin-top: 13px;
 }
+#portfolio .box .textbox h4 {
+  font-size: 20px;
+  color: #838489;
+}
+
 #about .txt {
   margin: 60px 0;
 }
