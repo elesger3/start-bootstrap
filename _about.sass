@@ -58,7 +58,7 @@
     @media screen and ( max-width: 992px )
         .box
             margin-bottom: 100px
-            align-items: flex-start
+            // align-items: flex-start
             .textbox
                 width: 200px
 
@@ -71,15 +71,14 @@
         .box
             align-items: flex-start
             flex-direction: row-reverse
-            margin-right: 100px
             margin-bottom: 75px
             .textbox
-                text-align: start
+                width: 400px
+                text-align: start 
             .imgbox
-                width: 160px
+                width: 150px
                 height: auto
-                img
-                    width: 140px
+                margin: 0
         .right
             margin-bottom: 70px
             flex-direction: row
@@ -90,3 +89,19 @@
         height: 160px
         .minibox
             padding: 0 30px
+    
+    @media screen and ( max-width:576px  )
+        .text-center
+            h1
+                font-size: 50px
+            h3
+                font: size 20px
+        .box
+            .imgbox
+                width: 140px
+                height: auto
+            .textbox
+                h2,h4
+                    font-size: 25px
+                p
+                    font-size: 20px

@@ -255,7 +255,6 @@ header .menu .box .icon {
 @media screen and (max-width: 992px) {
   #about .box {
     margin-bottom: 100px;
-    align-items: flex-start;
   }
   #about .box .textbox {
     width: 200px;
@@ -271,18 +270,16 @@ header .menu .box .icon {
   #about .box {
     align-items: flex-start;
     flex-direction: row-reverse;
-    margin-right: 100px;
     margin-bottom: 75px;
   }
   #about .box .textbox {
+    width: 400px;
     text-align: start;
   }
   #about .box .imgbox {
-    width: 160px;
+    width: 150px;
     height: auto;
-  }
-  #about .box .imgbox img {
-    width: 140px;
+    margin: 0;
   }
   #about .right {
     margin-bottom: 70px;
@@ -298,6 +295,24 @@ header .menu .box .icon {
 }
 #about .ourstory .minibox {
   padding: 0 30px;
+}
+@media screen and (max-width: 576px) {
+  #about .text-center h1 {
+    font-size: 50px;
+  }
+  #about .text-center h3 {
+    font: size 20px;
+  }
+  #about .box .imgbox {
+    width: 140px;
+    height: auto;
+  }
+  #about .box .textbox h2, #about .box .textbox h4 {
+    font-size: 25px;
+  }
+  #about .box .textbox p {
+    font-size: 20px;
+  }
 }
 
 #team h1 {
