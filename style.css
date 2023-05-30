@@ -371,7 +371,7 @@ header .menu .box .icon {
 }
 
 #contact {
-  background-image: url("/assets/contact.jpg");
+  background-image: url("assets/contact.jpg");
   background-size: cover;
   background-position: center center;
   background-color: rgba(0, 0, 0, 0);
